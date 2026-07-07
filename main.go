@@ -23,7 +23,7 @@ func rootHandler(res http.ResponseWriter, req *http.Request) {
 		http.NotFound(res, req)
 		return
 	}
-	http.ServeFile(res, req, "index.html")
+	http.ServeFile(res, req, "frontend/index.html")
 }
 
 func exampleMapsHandler(res http.ResponseWriter, req *http.Request) {
